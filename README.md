@@ -14,7 +14,7 @@ you'll be creating yourself during the tutorial and the `scripts` subdirectory
 contains a shell script with commands that are executed when Jenkins processes
 the "Deliver" stage of your Pipeline.
 
-
+```
 docker run \
   --rm \
   --name jenkins-tutorials \
@@ -24,5 +24,5 @@ docker run \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v "$HOME":/home \
   jenkinsci/blueocean
-  
+```  
   docker exec -it jenkins-tutorials bash
